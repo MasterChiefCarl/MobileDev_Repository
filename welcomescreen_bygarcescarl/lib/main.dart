@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: const <Widget>[
                   Icon(
                     Icons.favorite,
-                    color: Colors.blue,
+                    color: Colors.white,
                     size: 24.0,
                     semanticLabel: 'Text to announce in accessibility modes',
                   ),
