@@ -64,7 +64,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Text(
                     'WELCOME',
                     style: TextStyle(
-                        letterSpacing: 10.0, fontSize: 20.0, fontFamily: ''),
+                        letterSpacing: 10.0, fontSize: 20.0,),
                   ),
                 ],
               ),
@@ -129,7 +129,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Text(
                     'Made with',
                     style: TextStyle(
-                        letterSpacing: 2.0, fontSize: 15.0, fontFamily: ''),
+                        letterSpacing: 2.0, fontSize: 15.0,),
                   ),
                   SizedBox(
                     height: 24,
@@ -147,7 +147,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Text(
                     'by Carl Garces',
                     style: TextStyle(
-                        letterSpacing: 2.0, fontSize: 15.0, fontFamily: ''),
+                        letterSpacing: 2.0, fontSize: 15.0,),
                   ),
                 ],
               ),
