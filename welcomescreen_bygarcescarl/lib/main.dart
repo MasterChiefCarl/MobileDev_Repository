@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 children: const <Widget>[
                   Icon(
                     Icons.favorite,
-                    color: Colors.white,
+                    color: Color(0xff4d69ff),
                     size: 24.0,
                     semanticLabel: 'Text to announce in accessibility modes',
                   ),
@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Container(
                   height: 240,
                   width: 300,
-                  color: Colors.blue,
+                  color: const Color(0xff4d69ff),
                   child: Image.asset('graphics/welcome.png', fit: BoxFit.cover),
                 ),
               ),
@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   style: TextButton.styleFrom(
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(50)),
-                    backgroundColor: Colors.blue,
+                    backgroundColor: const Color(0xff4d69ff),
                     primary: Colors.white,
                     padding: const EdgeInsets.fromLTRB(82, 15, 82, 15),
                   ),
@@ -112,11 +112,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         borderRadius: BorderRadius.circular(50)),
                     primary: Colors.blue,
                     padding: const EdgeInsets.fromLTRB(78, 15, 78, 15),
-                    side: const BorderSide(color: Colors.blue, width: 2),
+                    side: const BorderSide(color: Color(0xff4d69ff), width: 2),
                   ),
                   child: const Text(
                     'Register',
-                    style: TextStyle(color: Colors.white),
+                    style: TextStyle(color: Colors.black),
                   )),
 
               const SizedBox(
