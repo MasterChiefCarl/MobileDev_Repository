@@ -106,6 +106,22 @@ class _MyHomePageState extends State<MyLandingPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment:CrossAxisAlignment.center,
+                    children: <Widget>[
+                  
+                  const Icon(
+                    Icons.room_service,
+                    color: Color(0xff4d69ff),
+                    size: 24.0,
+                    semanticLabel: 'Text to announce in accessibility modes',
+                  ),
+                  
+                  const SizedBox(
+                    width: 15.0,
+                  ),
+
                   OutlinedButton(
                       onPressed: _returnStays,
                       style: TextButton.styleFrom(
@@ -120,9 +136,27 @@ class _MyHomePageState extends State<MyLandingPage> {
                         'Stays',
                         style: TextStyle(color: Colors.black),
                       )),
-
+                    ],
+                  ),
+                  
                   const SizedBox(
                     height: 10,
+                  ),
+
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment:CrossAxisAlignment.center,
+                    children: <Widget>[
+                  
+                  const Icon(
+                    Icons.airplanemode_active,
+                    color: Color(0xff4d69ff),
+                    size: 24.0,
+                    semanticLabel: 'Text to announce in accessibility modes',
+                  ),
+
+                  const SizedBox(
+                    width: 15.0,
                   ),
 
                   OutlinedButton(
@@ -139,11 +173,29 @@ class _MyHomePageState extends State<MyLandingPage> {
                         'Flights',
                         style: TextStyle(color: Colors.black),
                       )),
-
+                    ],
+                  ),
+                  
                   const SizedBox(
                     height: 10,
                   ),
+                  
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment:CrossAxisAlignment.center,
+                  children: <Widget>[
+                  
+                  const Icon(
+                    Icons.car_rental,
+                    color: Color(0xff4d69ff),
+                    size: 24.0,
+                    semanticLabel: 'Text to announce in accessibility modes',
+                  ),
 
+                  const SizedBox(
+                    width: 15.0,
+                  ),
+                  
                   OutlinedButton(
                       onPressed: _returnCars,
                       style: TextButton.styleFrom(
@@ -158,9 +210,28 @@ class _MyHomePageState extends State<MyLandingPage> {
                         'Cars',
                         style: TextStyle(color: Colors.black),
                       )),
+                    ],
+                  ),
 
                   const SizedBox(
                     height: 10,
+                  ),
+
+
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment:CrossAxisAlignment.center,
+                    children: <Widget>[
+                  
+                  const Icon(
+                    Icons.umbrella,
+                    color: Color(0xff4d69ff),
+                    size: 24.0,
+                    semanticLabel: 'Text to announce in accessibility modes',
+                  ),
+
+                  const SizedBox(
+                    width: 15.0,
                   ),
 
                   TextButton(
@@ -176,10 +247,15 @@ class _MyHomePageState extends State<MyLandingPage> {
                         'All-Inclusive Vacations',
                         style: TextStyle(color: Colors.white),
                       )),
-
+                    ],
+                  ),
+                  
+                  
                   const SizedBox(
                     height: 24,
-                  ), //to separate or distance the widgets from each Other
+                  ),
+                  
+                   //to separate or distance the widgets from each Other
                 ],
               ),
               Row(
