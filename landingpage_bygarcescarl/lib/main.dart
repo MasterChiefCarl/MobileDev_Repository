@@ -31,7 +31,7 @@ class MyLandingPage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyLandingPage> {
   void _returnStays() {
-    print("Sign In Button Tapped");
+    print("Stays Button Tapped");
   }
 
   void _returnFlights() {
@@ -50,17 +50,17 @@ class _MyHomePageState extends State<MyLandingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-          child: Container(
-            color: Colors.lightBlueAccent,
-          
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
+        child: Container(
+          color: Colors.lightBlueAccent,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
               Container(
-                height: 400,
-                color: const Color(0xff4d69ff),
-                child: Image.asset('graphics/welcome.png', fit: BoxFit.cover),
+                height: 300,
+                // color: const Color(0xff4d69ff),
+                child:
+                    Image.asset('graphics/travelling1.png', fit: BoxFit.fill),
               ),
               const SizedBox(
                 height: 24,
@@ -69,21 +69,31 @@ class _MyHomePageState extends State<MyLandingPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const <Widget>[
                   Icon(
-                    Icons.favorite,
+                    Icons.shopping_bag,
                     color: Color(0xff4d69ff),
                     size: 24.0,
                     semanticLabel: 'Text to announce in accessibility modes',
                   ),
                   SizedBox(
                     height: 24,
-                    width: 20.0,
+                    width: 15.0,
                   ),
                   Text(
-                    'WELCOME',
+                    'TRAVEL 365',
                     style: TextStyle(
-                      letterSpacing: 10.0,
+                      letterSpacing: 7.0,
                       fontSize: 20.0,
                     ),
+                  ),
+                  SizedBox(
+                    height: 24,
+                    width: 15.0,
+                  ),
+                  Icon(
+                    Icons.shopping_bag,
+                    color: Color(0xff4d69ff),
+                    size: 24.0,
+                    semanticLabel: 'Text to announce in accessibility modes',
                   ),
                 ],
               ),
@@ -92,81 +102,86 @@ class _MyHomePageState extends State<MyLandingPage> {
                 height: 24,
               ), //to separate or distance the widgets from each Other
 
-              //Shaded Button with Text button
-              
-              OutlinedButton(
-                  onPressed: _returnStays,
-                  style: TextButton.styleFrom(
-                    // shape: RoundedRectangleBorder(
-                    //     borderRadius: BorderRadius.circular(50)),
-                    primary: Colors.blue,
-                    padding: const EdgeInsets.fromLTRB(78, 15, 78, 15),
-                    side: const BorderSide(color: Color(0xff4d69ff), width: 2),
-                  ),
-                  child: const Text(
-                    'Stays',
-                    style: TextStyle(color: Colors.black),
-                  )
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  OutlinedButton(
+                      onPressed: _returnStays,
+                      style: TextButton.styleFrom(
+                        // shape: RoundedRectangleBorder(
+                        //     borderRadius: BorderRadius.circular(50)),
+                        primary: Colors.blue,
+                        fixedSize: const Size(175, 50),
+                        side: const BorderSide(
+                            color: Color(0xff4d69ff), width: 2),
+                      ),
+                      child: const Text(
+                        'Stays',
+                        style: TextStyle(color: Colors.black),
+                      )),
+
+                  const SizedBox(
+                    height: 10,
                   ),
 
-              const SizedBox(
-                height: 24,
+                  OutlinedButton(
+                      onPressed: _returnFlights,
+                      style: TextButton.styleFrom(
+                        // shape: RoundedRectangleBorder(
+                        //     borderRadius: BorderRadius.circular(50)),
+                        primary: Colors.blue,
+                        fixedSize: const Size(175, 50),
+                        side: const BorderSide(
+                            color: Color(0xff4d69ff), width: 2),
+                      ),
+                      child: const Text(
+                        'Flights',
+                        style: TextStyle(color: Colors.black),
+                      )),
+
+                  const SizedBox(
+                    height: 10,
+                  ),
+
+                  OutlinedButton(
+                      onPressed: _returnCars,
+                      style: TextButton.styleFrom(
+                        // shape: RoundedRectangleBorder(
+                        //     borderRadius: BorderRadius.circular(50)),
+                        primary: Colors.blue,
+                        fixedSize: const Size(175, 50),
+                        side: const BorderSide(
+                            color: Color(0xff4d69ff), width: 2),
+                      ),
+                      child: const Text(
+                        'Cars',
+                        style: TextStyle(color: Colors.black),
+                      )),
+
+                  const SizedBox(
+                    height: 10,
+                  ),
+
+                  TextButton(
+                      onPressed: _returnAllInclusiveVactions,
+                      style: TextButton.styleFrom(
+                        // shape: RoundedRectangleBorder(
+                        //     borderRadius: BorderRadius.circular(50)),
+                        backgroundColor: const Color(0xff4d69ff),
+                        primary: Colors.white,
+                        fixedSize: const Size(175, 50),
+                      ),
+                      child: const Text(
+                        'All-Inclusive Vacations',
+                        style: TextStyle(color: Colors.white),
+                      )),
+
+                  const SizedBox(
+                    height: 24,
+                  ), //to separate or distance the widgets from each Other
+                ],
               ),
-
-              OutlinedButton(
-                  onPressed: _returnFlights,
-                  style: TextButton.styleFrom(
-                    // shape: RoundedRectangleBorder(
-                    //     borderRadius: BorderRadius.circular(50)),
-                    primary: Colors.blue,
-                    padding: const EdgeInsets.fromLTRB(78, 15, 78, 15),
-                    side: const BorderSide(color: Color(0xff4d69ff), width: 2),
-                  ),
-                  child: const Text(
-                    'Flights',
-                    style: TextStyle(color: Colors.black),
-                  )),
-
-              const SizedBox(
-                height: 24,
-              ),
-
-              OutlinedButton(
-                  onPressed: _returnCars,
-                  style: TextButton.styleFrom(
-                    // shape: RoundedRectangleBorder(
-                    //     borderRadius: BorderRadius.circular(50)),
-                    primary: Colors.blue,
-                    padding: const EdgeInsets.fromLTRB(78, 15, 78, 15),
-                    side: const BorderSide(color: Color(0xff4d69ff), width: 2),
-                  ),
-                  child: const Text(
-                    'Cars',
-                    style: TextStyle(color: Colors.black),
-                  )),
-
-              const SizedBox(
-                height: 24,
-              ),
-
-              TextButton(
-                  onPressed: _returnAllInclusiveVactions,
-                  style: TextButton.styleFrom(
-                    // shape: RoundedRectangleBorder(
-                    //     borderRadius: BorderRadius.circular(50)),
-                    backgroundColor: const Color(0xff4d69ff),
-                    primary: Colors.white,
-                    padding: const EdgeInsets.fromLTRB(82, 15, 82, 15),
-                  ),
-                  child: const Text(
-                    'All-Inclusive Vacations',
-                    style: TextStyle(color: Colors.white),
-                  )),
-
-              const SizedBox(
-                height: 24,
-              ), //to separate or distance the widgets from each Other
-
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const <Widget>[
@@ -200,7 +215,7 @@ class _MyHomePageState extends State<MyLandingPage> {
                 ],
               ),
             ],
-           ),
+          ),
         ),
       ),
     );
