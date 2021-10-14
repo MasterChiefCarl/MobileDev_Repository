@@ -224,7 +224,7 @@ class _MyHomePageState extends State<MyLandingPage> {
                     children: <Widget>[
                   
                   const Icon(
-                    Icons.umbrella,
+                    Icons.directions_boat,
                     color: Color(0xff4d69ff),
                     size: 24.0,
                     semanticLabel: 'Text to announce in accessibility modes',
