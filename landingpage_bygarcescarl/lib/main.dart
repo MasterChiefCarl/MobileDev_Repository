@@ -56,11 +56,12 @@ class _MyHomePageState extends State<MyLandingPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: <Widget>[
-              Container(
-                height: 300,
+              SizedBox(
+                height: 300
+                ,
                 // color: const Color(0xff4d69ff),
                 child:
-                    Image.asset('graphics/travelling1.png', fit: BoxFit.fill),
+                    Image.asset('graphics/travelling2.png', fit: BoxFit.fitWidth),
               ),
               const SizedBox(
                 height: 24,
@@ -258,6 +259,7 @@ class _MyHomePageState extends State<MyLandingPage> {
                    //to separate or distance the widgets from each Other
                 ],
               ),
+              
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const <Widget>[
